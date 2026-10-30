@@ -1,4 +1,75 @@
-<!-- CLEAN VERSION - Replace your dashboard div with this -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PesaSmart AI</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>body{font-family:sans-serif; background:#0e0e0e; color:white}</style>
+</head>
+<body class="pb-24">
+
+<!-- HEADER -->
+<div class="p-5 flex justify-between items-center">
+  <b class="text-xl">✦ PesaSmart AI</b>
+  <div class="w-8 h-8 bg-white/20 rounded-full"></div>
+</div>
+
+<!-- BALANCE CARD - FIXED -->
+<div class="mx-5 bg-gradient-to-br from-[#1a1a1a] to-black border border-white/10 rounded-[24px] p-6">
+  <p class="text-sm text-white/60">Good morning, Aisha</p>
+  <p class="text-sm text-white/60 mt-4">Total Balance</p>
+  <h1 class="text-[32px] font-extrabold leading-none mt-2">KES 12,540.00</h1>
+  <p class="text-sm mt-3"><span class="text-[#00D084] font-bold">↑ +KES 2,120</span> <span class="text-white/60">this month</span></p>
+</div>
+
+<!-- SPENDING - FIXED COLORS -->
+<div class="p-5">
+  <h3 class="text-center font-bold text-sm">Spending Overview</h3>
+  <div class="grid grid-cols-3 gap-3 mt-3">
+    <div class="bg-[#1e1e1e] rounded-2xl p-4 text-center"><p class="text-[11px] opacity-60">Spent</p><p class="font-bold text-sm mt-1">KES 4,320</p><p class="text-[10px] opacity-50">of 10k budget</p></div>
+    <div class="bg-[#1e1e1e] rounded-2xl p-4 text-center"><p class="text-[11px] opacity-60">Saved</p><p class="font-bold text-sm mt-1">KES 1,800</p><p class="text-[10px] text-green-400">18% saved</p></div>
+    <div class="bg-[#1e1e1e] rounded-2xl p-4 text-center"><p class="text-[11px] opacity-60">Cashback</p><p class="font-bold text-sm mt-1">KES 120</p><p class="text-[10px] text-green-400">This month</p></div>
+  </div>
+
+  <h3 class="text-center font-bold text-sm mt-6">Quick Actions</h3>
+  <div class="grid grid-cols-4 gap-3 mt-3 text-center text-xs">
+    <div><div class="w-14 h-14 mx-auto bg-white rounded-full text-black flex items-center justify-center text-xl">↗</div><p class="mt-1">Send</p></div>
+    <div><div class="w-14 h-14 mx-auto bg-white rounded-full text-black flex items-center justify-center text-xl">⊞</div><p class="mt-1">Pay</p></div>
+    <div><div class="w-14 h-14 mx-auto bg-white rounded-full text-black flex items-center justify-center text-xl">+</div><p class="mt-1">Top Up</p></div>
+    <div><div class="w-14 h-14 mx-auto bg-white rounded-full text-black flex items-center justify-center text-xl">≡</div><p class="mt-1">Bills</p></div>
+  </div>
+</div>
+
+<!-- MUSIC - FIXED, NOT IN QUICK ACTIONS -->
+<div class="mx-5 bg-black border border-green-500/30 rounded-2xl p-4">
+  <p class="text-xs text-green-400">🎵 Now Playing</p>
+  <p class="font-bold mt-1">Can't Tell Me Nothing</p>
+  <p class="text-xs opacity-60">Kanye West • Graduation</p>
+  <!-- Use Spotify, YouTube embed is blocked in Kenya for this song -->
+  <iframe style="border-radius:12px; margin-top:12px;" src="https://open.spotify.com/embed/track/2ilo9o1daxA2K3Prl3h3oI?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
+</div>
+
+<!-- YOUR CALCULATORS - KEPT BUT FIXED PADDING -->
+<div class="mx-5 mt-6 space-y-4">
+  <div class="bg-[#1e1e1e] rounded-2xl p-5">
+    <h3 class="font-bold">💰 PesaSmart AI</h3>
+    <p class="text-sm opacity-60 mt-1">Your money, managed smarter.</p>
+  </div>
+  <!-- Put your Budget / Savings / Business calculators here - same as before -->
+</div>
+
+<!-- FOCUS MODE - FIXED POSITION, WON'T COVER INPUTS -->
+<div id="focusBtn" style="position:fixed; bottom:20px; right:20px; background:#111; border:1px solid #333; padding:10px 16px; border-radius:30px; font-size:13px; z-index:99;">🍃 Focus Mode • Lo-fi</div>
+
+<script>
+// Simple focus toggle, no overlap
+document.getElementById('focusBtn').onclick = () => {
+  window.open('https://www.youtube.com/watch?v=5qap5aO4i9A','_blank'); // lofi channel
+};
+</script>
+</body>
+  </html><!-- CLEAN VERSION - Replace your dashboard div with this -->
 <div style="max-width:420px; margin:0 auto; background:#f7f7f5; color:#111; min-height:100vh; font-family:Inter,sans-serif; border-radius:32px; overflow:hidden; padding:20px;">
 
   <div style="display:flex; justify-content:space-between; align-items:center;">
