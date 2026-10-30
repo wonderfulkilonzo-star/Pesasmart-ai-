@@ -1,4 +1,22 @@
+<!-- PesaSmart Music Widget -->
+<div id="music-widget" style="position:fixed; bottom:20px; right:20px; background:#111; color:#fff; padding:12px 16px; border-radius:24px; display:flex; gap:12px; align-items:center; z-index:999; font-family:sans-serif; box-shadow:0 4px 20px rgba(0,0,0,0.3);">
+  <button id="playBtn" style="background:#00D084; border:none; width:36px; height:36px; border-radius:50%; cursor:pointer;">▶️</button>
+  <span style="font-size:13px;">Focus Mode • Lo-fi</span>
+  <audio id="pesaAudio" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+  </audio>
+</div>
 
+<script>
+  const btn = document.getElementById('playBtn');
+  const audio = document.getElementById('pesaAudio');
+  let playing = false;
+  btn.onclick = () => {
+    playing ? audio.pause() : audio.play();
+    btn.textContent = playing ? '▶️' : '⏸️';
+    playing = !playing;
+  }
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
