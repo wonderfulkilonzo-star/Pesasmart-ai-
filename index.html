@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE html>const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+function showApp(email){
+  loginScreen.classList.add('hidden');
+  mainApp.classList.remove('hidden');
+  document.getElementById('userGreet').innerText = "👋 " + email;
+}
+function showLogin(){
+  mainApp.classList.add('hidden');
+  loginScreen.classList.remove('hidden');
+}
+onAuthStateChanged(auth, u => u ? showApp(u.email) : showLogin());
 <html lang="en">
 <head>
 <meta charset="UTF-8">
